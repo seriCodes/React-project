@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from '../../components/Header';
+import NotFoundPage from '../../components/NotFoundPage';
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
 
-test('should render Header correctly', () => {
-  const wrapper = shallow(<Header />);
+test('should render NotFoundPage correctly', () => {
+  const wrapper = shallow(<NotFoundPage />);
   expect(wrapper).toMatchSnapshot();
 });
